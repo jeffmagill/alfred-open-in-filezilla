@@ -7,8 +7,8 @@ An Alfred workflow to open up Filezilla and connect to a site.
 
 ## Requirements
 
-*OS/X
-*Filezilla 
+* OS/X
+* Filezilla 
 
 ##Usage
 The command to use the workflow is ```fz```. Open up the Alfred bar and enter ```fz <name in site manager>```.
@@ -17,7 +17,7 @@ The workflow will search the current OS/X user's Site Manager for an site that m
 
 For example, you you have the following sites in your Site Manager...
 
-![screenshot of the workflow in use](https://raw.github.com/jeffmagill/alfred-open-in-filezilla/master/docs/site-master.png)
+![screenshot of a Filezilla Site Manager](https://raw.github.com/jeffmagill/alfred-open-in-filezilla/master/docs/site-manager.png)
 
 The workflow will return...
 
