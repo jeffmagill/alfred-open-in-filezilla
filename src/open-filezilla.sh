@@ -3,7 +3,7 @@
 echo "<?xml version=\"1.0\"?>"
 echo "<items>"
 
-grep -io "<name>.*</name>" ~/.filezilla/sitemanager.xml | grep -io ">.*<" | grep -io "[^<]*" | cut -c2-10000 | grep -io "^\w.*$" | while read line; do
+grep -io "<name>.*</name>" ~/.config/filezilla/sitemanager.xml | grep -io ">.*<" | grep -io "[^<]*" | cut -c2-10000 | grep -io "^\w.*$" | while read line; do
 	set -- $line
 	if [[ $line =~ {query}.* ]] ; then
 		echo "<item uid='$line' arg='$line' valid='YES' autocomplete='$line'>"
