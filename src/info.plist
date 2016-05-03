@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>B131BE60-7B64-41E3-B696-95F3AFC65E44</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8D63E21-F25A-43C5-B904-C09FFF0665C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jeff Magill, Unhinged Web Studio</string>
+	<key>description</key>
+	<string>Open an existing site in Filezilla</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open in Filezilla</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open /Applications/FileZilla.app/ --args --site=""{query}""</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B8D63E21-F25A-43C5-B904-C09FFF0665C6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>fz</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>we are waiting now</string>
+				<key>script</key>
+				<string>xsltproc --stringparam query "{query}" style.xsl ~/.filezilla/sitemanager.xml </string>
+				<key>subtext</key>
+				<string>Open Filezilla and connect to a site in the Site Manager</string>
+				<key>title</key>
+				<string>Open in Filezilla</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B131BE60-7B64-41E3-B696-95F3AFC65E44</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>B131BE60-7B64-41E3-B696-95F3AFC65E44</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>B8D63E21-F25A-43C5-B904-C09FFF0665C6</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://unhingedweb.com</string>
+</dict>
+</plist>
