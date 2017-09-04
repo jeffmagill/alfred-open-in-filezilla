@@ -67,7 +67,7 @@
 				<key>runningsubtext</key>
 				<string>we are waiting now</string>
 				<key>script</key>
-				<string>xsltproc --stringparam query "{query}" style.xsl ~/.filezilla/sitemanager.xml </string>
+				<string>xsltproc --stringparam query "{query}" style.xsl ~/.config/filezilla/sitemanager.xml </string>
 				<key>subtext</key>
 				<string>Open Filezilla and connect to a site in the Site Manager</string>
 				<key>title</key>
