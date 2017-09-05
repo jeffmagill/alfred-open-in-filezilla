@@ -24,19 +24,21 @@
     <xsl:template match="Server">
         <xsl:variable name="path">
             <xsl:call-template name="long-path"> 
-                <xsl:with-param name="node" select="."/> 
+                <xsl:with-param name="node" select="Name"/> 
             </xsl:call-template>
         </xsl:variable>
+
         <xsl:if test="contains($path,$query)">
         
-        <xsl:variable name="name" select="text()"/>
+        <xsl:variable name="name" select="Name"/>
          
         <item uid="{$path}" arg="0{$path}" valid='YES' autocomplete='{$path}'>
             <title><xsl:value-of select="$name"/></title>
             <subtitle>Open '<xsl:value-of select="$path"/>' in Filezilla</subtitle>
-            <icon type='fileicon'>~/Applications/Filezilla.app</icon>
+            <icon type='fileicon'>/Applications/Filezilla.app</icon>
         </item>
         </xsl:if>
+        
     </xsl:template>
     
 </xsl:stylesheet>
